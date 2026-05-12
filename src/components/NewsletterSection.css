@@ -1,0 +1,125 @@
+.newsletter {
+  background-color: var(--light-gray);
+  padding: 4rem 0;
+  margin: 2rem 0;
+}
+
+.newsletter-content {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.newsletter h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.newsletter p {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  color: var(--text-secondary);
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--medium-gray);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  background-color: var(--primary-white);
+  color: var(--text-primary);
+  transition: border-color 0.3s ease;
+}
+
+.newsletter-form input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.newsletter-form input::placeholder {
+  color: var(--text-secondary);
+}
+
+.subscribe-btn {
+  background-color: var(--primary-black);
+  color: var(--primary-white);
+  padding: 0.75rem 2rem;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.9rem;
+}
+
+.subscribe-btn:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-black);
+}
+
+.success-message {
+  color: var(--primary-black);
+  font-weight: 600;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .newsletter {
+    padding: 2.5rem 0;
+  }
+
+  .newsletter h2 {
+    font-size: 1.5rem;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .subscribe-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .newsletter {
+    padding: 2rem 0;
+    margin: 1rem 0;
+  }
+
+  .newsletter h2 {
+    font-size: 1.25rem;
+  }
+
+  .newsletter p {
+    font-size: 0.9rem;
+  }
+
+  .newsletter-form input {
+    padding: 0.65rem 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .subscribe-btn {
+    padding: 0.65rem 1.5rem;
+    font-size: 0.8rem;
+  }
+}
